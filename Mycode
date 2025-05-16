@@ -73,13 +73,13 @@
     }
     .main-content {
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
       padding-top: 100px;
-      gap: 20px;
+      flex-direction: column;
       text-align: center;
+      gap: 20px;
     }
     .profile-pic {
       width: 170px;
@@ -180,14 +180,6 @@
     function toggleDropdown() {
       const dropdown = document.getElementById('dropdown');
       dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
-    }
-    // Close dropdown if clicking outside
-    window.onclick = function(event) {
-      const dropdown = document.getElementById('dropdown');
-      const menuBtn = document.querySelector('.menu');
-      if (event.target !== menuBtn && !menuBtn.contains(event.target)) {
-        dropdown.style.display = 'none';
-      }
     }
   </script>
 </body>
